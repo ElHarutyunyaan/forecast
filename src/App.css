@@ -1,38 +1,76 @@
+body {
+  background-color: rgb(162, 214, 245);
+}
 .App {
+  margin: auto;
+  border: 2px solid black;
+  width: 700px;
+  height: 720px;
+  border-radius: 30px;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+input {
+  height: 30px;
+  margin: 10px;
+  padding: 5px;
+  background-color: rgb(212, 231, 238);
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+button {
   color: white;
+  height: 45px;
+  border-radius: 20px;
+  font-size: 17px;
+  width: 80px;
+  background-color: rgb(4, 60, 70);
+}
+.details p {
+  font-weight: 600;
+}
+.weatherField {
+  padding: 15px;
+  background-color: rgb(243, 240, 240);
+  width: 550px;
+  height: 230px;
+  margin: auto;
+  border-radius: 25px;
+  border: 1px solid black;
+}
+.place {
+  padding-right: 250px;
+}
+.time {
+  font-size: 14px;
+  padding-right: 365px;
+  margin-top: -15px;
+  color: grey;
+}
+.cloud {
+  margin-right: 370px;
+}
+.temp {
+  font-size: 45px;
+  margin-top: -15px;
+}
+.details {
+  margin: auto;
+  width: 550px;
+  display: flex;
+  /* justify-content: space-between; */
 }
 
-.App-link {
-  color: #61dafb;
+.details-right p{
+    border-bottom: 2px dashed rgb(172, 166, 166);
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.details-left,
+.details-right {
+  flex: 1;
+  padding:25px;
+  text-align: left;
+  
+}
+.details-left p{
+    border-bottom: 2px dashed rgb(172, 166, 166);
+}
+.details p {
+  padding: 7px;
 }
